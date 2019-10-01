@@ -1,0 +1,391 @@
+body, html {
+  height: 100%;
+  background-color: black;
+  margin: 0;
+  position: relative;
+
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg_1{
+  background-image: url("Wallpaper/code.jpg");
+  height: 100%;
+}
+
+.bgimg_2{
+  background-image: url("Wallpaper/about.jpg");
+  height: 900px;
+
+}
+
+.bgimg_3{
+  background-image: url("Wallpaper/portfolio.jpg");
+  height: 700px;
+
+}
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 900px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media  screen and (max-width: 900px) {
+  .bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    border: 10px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 700px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border: 5px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.bg-image {
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+footer {
+    background: #1B242F;
+    padding-bottom: 30px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+  padding: 30px;
+}
+
+.flex-row div{
+  margin: 20px;
+}
+
+footer .footnote {
+    font-size: 15pt;
+    color: #8F9AA7;
+    margin-top: 35px;
+    opacity: 0.6;
+    font-family: 'Raleway';
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer .footnote .highlight {
+    font-family: 'Open Sans';
+    color: #E31B6D;
+}
+
+footer .icon-wrap .fab {
+    text-align: center;
+    color: #fff;
+}
+
+.fab {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+footer .icon-wrap .icon {
+    overflow: hidden;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    text-align: center;
+    margin: 0 15px;
+    background: #262F38;
+    font-size: 18pt;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.icon:hover{
+    box-shadow: 2px 2px 5px grey;
+}
+
+nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top:100%;
+    background: #1B242F;
+    border-bottom: 3px solid #04C2C9;
+    text-align: left;
+    z-index: 99;
+    color:white;
+}
+
+nav .active {
+    color: #E31B6D;
+}
+
+@media screen and (min-width: 600px){
+  nav .link-wrap div:first-child {
+      padding: 0;
+  }
+}
+
+@media screen and (min-width: 600px){
+  nav .link-wrap div {
+      margin: 0 20px;
+      padding: initial;
+      font-size: initial;
+      display: inline;
+  }
+}
+
+nav .link-wrap div {
+  margin: 10px;
+    cursor: pointer;
+    transition: color .5s;
+    text-transform: uppercase;
+}
+
+nav .link-wrap {
+    max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    top: 53px;
+    background: #333;
+    overflow: hidden;
+    height: 0;
+    transition: height .3s ease-out;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 600px){
+  nav .link-wrap {
+      position: initial;
+      background: none;
+      overflow: visible;
+      height: initial;
+      text-align: left;
+
+  }
+}
+
+.fas {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+nav .fa-bars {
+    position: absolute;
+    right: 5vw;
+    margin: auto 0;
+    font-size: 30pt;
+    line-height: 36pt;
+    top: 0;
+}
+
+@media screen and (min-width: 600px){
+  nav .fa-bars {
+      display: none;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.link{
+  color: white;
+}
+
+.header {
+    position: relative;
+    top: 16%;
+    left: 46%;
+    font-size: 25pt;
+    font-family: 'raleway-bold';
+    color: white;
+  }
+
+.header-bar {
+    position: relative;
+    top: 14%;
+    left: 43%;
+    margin: 25px 0 75px 0;
+    width: 240px;
+    height: 4px;
+    background: white;
+
+}
+
+.image-cropper {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    top:17%;
+    left:3%;
+}
+
+@media screen and (max-width: 1150px){
+  .image-cropper {
+    width: 370px;
+    height: 400px;
+    top: 8%;
+  }
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%
+  width:500px;
+  height: 500px;
+  width: auto;
+}
+@media screen and (max-width: 1150px){
+  .profile-pic {
+    width:370px;
+    height: 400px;
+  }
+}
+
+.self-text{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-size: 20px;
+  border: 5px solid #f1f1f1;
+  position: relative;
+  left:65%;
+  top:0;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 1150px){
+  .self-text{
+    font-size: 15px;
+    width: 400px;
+    padding: 10px;
+    top:20%;
+    left: 45%;
+  }
+}
+
+.project{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-size: 30px;
+  border: 5px solid #f1f1f1;
+  position: relative;
+  top:20%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  margin-top: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.todo{
+  left:20%;
+  width: 300px;
+  height: 100px;
+}
+
+.slider{
+  top:33%;
+  left:80%;
+  width: 300px;
+  height: 100px;
+}
+
+.project:hover{
+  width: 500px;
+  height: 130px;
+  font-size: 50px;
+  -moz-box-shadow:    3px 7px 5px 6px #929396;
+  -webkit-box-shadow: 3px 7px 5px 6px #929396;
+  box-shadow:         3px 7px 5px 6px #929396;
+}
